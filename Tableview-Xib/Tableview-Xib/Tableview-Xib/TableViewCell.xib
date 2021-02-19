@@ -16,25 +16,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-D3-KhX">
-                        <rect key="frame" x="0.0" y="5" width="310" height="34"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-D3-KhX">
+                        <rect key="frame" x="5" y="5" width="150" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Bbx-fy-kDh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-vs-31W" userLabel="Lbl Temp">
+                        <rect key="frame" x="165" y="5" width="150" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="xcc-8h-btO"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4DE-D3-KhX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="215-am-NSS"/>
-                    <constraint firstItem="4DE-D3-KhX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="A3y-f8-jN5"/>
-                    <constraint firstAttribute="bottom" secondItem="4DE-D3-KhX" secondAttribute="bottom" constant="5" id="WuE-tZ-Y1c"/>
-                    <constraint firstAttribute="trailing" secondItem="4DE-D3-KhX" secondAttribute="trailing" constant="5" id="xIX-y0-D75"/>
+                    <constraint firstAttribute="bottom" secondItem="lyo-vs-31W" secondAttribute="bottom" constant="5" id="4ZJ-dN-rLN"/>
+                    <constraint firstAttribute="trailing" secondItem="lyo-vs-31W" secondAttribute="trailing" constant="5" id="Ju8-ZL-xk1"/>
+                    <constraint firstItem="4DE-D3-KhX" firstAttribute="baseline" secondItem="lyo-vs-31W" secondAttribute="baseline" id="Tef-0g-bSv"/>
+                    <constraint firstItem="lyo-vs-31W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nbG-Ev-3g2"/>
+                    <constraint firstItem="4DE-D3-KhX" firstAttribute="firstBaseline" secondItem="lyo-vs-31W" secondAttribute="firstBaseline" id="vSc-fY-CcG"/>
+                    <constraint firstItem="4DE-D3-KhX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="xgk-zp-Yph"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lblCity" destination="4DE-D3-KhX" id="xab-iI-rt8"/>
+                <outlet property="lblTemp" destination="lyo-vs-31W" id="3Bu-Zd-rf9"/>
             </connections>
-            <point key="canvasLocation" x="141" y="104"/>
+            <point key="canvasLocation" x="-268.1159420289855" y="75.669642857142847"/>
         </tableViewCell>
     </objects>
 </document>
